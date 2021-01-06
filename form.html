@@ -1,0 +1,67 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+            Music Album Generator
+        </title>
+    </head>
+    
+    <body bgcolor="yellow">
+        <form action="#" method="POST">
+            <div align="center">
+          
+
+            <h1>Create Your Album</h1><br/><br/>
+            <label for="genre">
+                What genre of music fucks with you  will you like ?
+            </label>
+            <input id="genre" type="text" name="genre" placeholder="Enter music genre" minlength="4" maxlength="20" required><br/><br/>
+                How many songs will you like?
+            </label>
+            <input id="number" type="number" name="number" required><br/><br/>
+            <label for="version">
+                What version of the album will you like?
+            </label>
+            Studio <input id="version" type="radio" name="version" value="studio">
+            Live  <input id="version" type="radio" name="version" value="live"><br/><br/>
+            <label for="language">
+                Level of explicit language
+            </label><br/>
+            <span>Clean</span>
+            <input id="language" type="range" min="0" max="10" step="1">
+            <span>Explicit</span><br/><br/>
+            <label for="additional">
+                What additional elements will you like to include?
+            </label>
+            Intro/Outro
+            <input id="additional" type="checkbox" name="additional" value="intro/outro">
+            Skits
+            <input id="additional" type="checkbox" name="additional" value="skits">
+            Interludes
+            <input id="additional" type="checkbox" name="additonal" value="interludes">
+            Digital Book
+            <input id="additional" type="checkbox" name="additional" value="digitalbook"><br/><br/>
+            <label for="inspo">
+                What album should inspire your order?
+            </label>
+            <select id="albums" name="albums">
+                <option value="17">17</option>
+                <option value="channelorange">Channel Orange</option>
+                <option value="freudian">Freudian</option>
+                <option value="ginger">Ginger</option>
+            </select><br/><br/>
+            <label for="payment">
+                Enter credit card number
+            </label>
+            <input id="payment" type="password" name="payment" required pattern="[0-9] {14,16}"><br/><br/>
+            <label for="info">
+                Additional Information
+            </label>
+            <textarea cols="50" rows="5"></textarea><br/><br/>
+            <input type="submit" value="submit">
+       
+        </div>
+    </form>
+
+    </body>
+</html>

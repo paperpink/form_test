@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Payment System</title>
+    </head>
+    <body style=background-color:rgb(36, 46, 1)
+        <div align="center">
+            <h2>Welcome to CalPay</h2><br>
+            Paying tomorrow's debt today
+        </div><br/>
+        <div align="center">
+            <form>
+                <label for="account">
+                Receiving Account 
+                </label>
+                <input id="account" name="account" type="text" placeholder="Enter account key" maxlength="9" minlength="0" required><br/><br/>
+                <label for="amount">
+                Payment Amount
+                </label>
+                <input id="amount" name="amount" type="number" placeholder="enter amount here" required><br/><br/>
+                <label for="merchant">
+                Merchant: Visa <input id="merchant" name="merchant" type="radio"> Mastercard <input id="merchant" name="merchant" type="radio"><br/><br/>
+                 </label>
+                 <label for ="password">
+                Enter last four digits of card </label>
+                <input id="password" name="password" type="password" minlength="0" maxlength="4" required><br/><br/>
+                <label for="risk">
+                Payment Risk<br/>
+                </label>
+                Low <input id="risk" name="risk" type="range" min="0" max="10" step="1">High<br/><br/>
+                <label for="bank">
+                Receiving Bank
+                 </label> 
+                <select id="bank" name="bank">
+                    <option value ="ecobank">Ecobank Ghana</option>
+                    <option value ="absa">Absa</option>
+                    <option value ="stanchart">Stanchart</option>
+                    <option value="wellsfargo">Wells Fargo</option>
+                </select>
+                <br/><br/>
+                <Input type="submit" value="Pay">
+                
+
+            </form>
+        </div>
+
+
+    </body>
+</html>
